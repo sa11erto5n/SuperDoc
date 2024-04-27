@@ -1,0 +1,100 @@
+header {
+    align-items: center;
+}
+
+header #tagline {
+    align-items: center;
+    border: 1px solid #B4B4B4;
+    border-radius: 2rem;
+    padding: 8px;
+    max-width: fit-content;
+    margin-bottom: 2rem;
+}
+
+header #tagline p {
+    font-weight: 700;
+    font-size: 21px;
+    margin-left: 15px !important;
+    margin-right: 15px !important;
+}
+
+header #tagline img {
+    width: 4rem;
+}
+
+header div:last-child img {
+    display: block;
+    width: 100%;
+}
+
+header div:last-child img:dir(rtl) {
+    transform: rotateY(180deg);
+}
+
+header #title {
+    font-size: 2.7rem;
+    font-weight: 700;
+}
+
+header #title span {
+    color: #1678F2;
+}
+
+header #description {
+    font-size: 21px;
+    color: #8A8585;
+}
+
+header form {
+    position: relative;
+    margin-top: 2rem;
+    background-color: #F9F7F7;
+    height: 3.7rem;
+    border-radius: 1.7rem;
+}
+
+header form input {
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    padding: 15px;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+header form button {
+    position: absolute;
+    right: 10px;
+    top: 12.5%;
+    bottom: 12.5%;
+    height: 75%;
+    border-radius: 50% !important;
+    aspect-ratio: 1 / 1;
+}
+
+header form button:dir(rtl) {
+    right: unset;
+    left: 10px;
+}
+
+@media (max-width:1135px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header div:first-child
+    {
+        width: 100%;
+        order: 2;
+    }
+    header div:last-child {
+        width: 100%;
+        order: 1;
+        margin-bottom: 1rem;
+    }
+
+    header div:last-child img {
+        width: 100%;
+    }
+}

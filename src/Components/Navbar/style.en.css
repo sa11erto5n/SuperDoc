@@ -1,0 +1,143 @@
+nav {
+    position: relative;
+}
+
+nav img:first-child {
+    width: 43px;
+    height: auto;
+    margin-right: 1rem;
+}
+
+nav img:last-child {
+    width: 172px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+nav #nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+nav #nav-menu a {
+    color: var(--color-light);
+    font-size: 18px;
+    font-weight: bold;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.nav_menu_active {
+    padding: 0;
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    right: 0;
+    background-color: var(--background-color);
+    display: flex !important;
+    flex-direction: column;
+    z-index: 1000;
+}
+
+.nav_menu_active li {
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+nav #menu_show_btn {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    width: 43px;
+    height: auto;
+    margin: 5px;
+    border: none;
+    background-color: transparent;
+}
+
+nav #menu_show_btn span {
+    width: 90%;
+    height: 3px;
+    margin-top: 7px;
+    border-radius: 3px;
+    background: var(--color-default-gradiant);
+}
+
+nav #menu_show_btn span:first-child {
+    margin-top: 0px;
+}
+
+nav #login_link {
+    text-decoration: none;
+    text-align: center;
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    height: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+
+}
+
+nav #login_link i {
+    display: none;
+}
+
+nav #lang_btn {
+    border: none;
+    padding: 0;
+    background-color: transparent;
+    width: 43px;
+    height: 43px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav #lang_btn img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+@media (max-width:930px) {
+    .container 
+    {
+        max-width: 100% !important;
+    }
+    nav #nav-menu {
+        display: none;
+    }
+
+    nav #menu_show_btn {
+        order: 2;
+        display: flex;
+    }
+
+    nav #login_link {
+        width: max-content;
+        aspect-ratio: 1 / 1;
+        padding: 5px;
+        border-radius: 50%;
+    }
+
+    nav #lang_btn {
+        order: 1;
+    }
+
+    nav #login_link i {
+        display: block;
+    }
+
+    nav #login_link span {
+        display: none;
+    }
+}
+
+@media (max-width:450px) {
+    nav img:last-child {
+        display: none;
+    }
+
+}
